@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        
+        @font-face {
+            font-family: iconfont;
+            src: url(/京东字体库/a84f5777e97992c6fb6d423c003f187b.woff);
+        }
+        body{
+            font-family: iconfont;
+        }
+        
+        .福建 {
+            font-family: iconfont;
+            font-style: normal;
+            color: red;
+        }
+        
+        * {
+            margin: 0;
+            
+        }
+        
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            width: auto;
+            min-width: 1190px;
+            height: 30px;
+            background: #e3e4e5;
+        }
+        
+        .页面 {
+            width: 1190px;
+            height: 30px;
+            
+            margin: 0 auto;
+        }
+        .左无序 {
+            display: inline-block;
+            list-style: none;
+            width: 50px;
+            height: 28px;
+            
+            padding-left: 7px;
+            padding-right: 7px;
+            padding-bottom: 2px;
+            line-height: 25px;
+            
+        }
+        .福建文字大小{
+            font-size: 10px;
+            color: #888484;
+            /* color: #e31615; */
+        }
+        li{
+            color: #888484;
+            border-top: 1px solid transparent;
+            
+
+        }
+        .右无序{
+            list-style: none;
+            float: right;
+            font-size: 10px;
+            line-height: 28px;
+        }
+        .右无序 span:nth-child(1){
+            color: red;
+        }
+        .右无序>li{
+            float: left;
+        }
+        .右无序 li i:nth-child(1){
+            position: absolute;
+            font-style: normal;
+            top: 1px;
+            font-weight: bolder;
+            
+            
+        }
+        
+        .右无序 li:nth-child(3){
+            position: relative;
+        }
+        .采购三角{
+            position: absolute;
+            font-style: normal;
+            top: 1px;
+            font-weight: bolder;
+
+        }
+    
+        .我的京东{
+            padding-left: 7px;
+            padding-right: 7px;
+            border-left: 1px solid transparent;
+            border-right: 1px solid transparent;
+            
+            
+        }
+        .我的京东2{
+            position: absolute;
+            font-style: normal;
+            top: 1px;
+            font-weight: bolder;
+            z-index: 2;
+            
+
+        }
+        a{
+            text-decoration: none;
+            color: #888484;
+        }
+        a:hover{
+            color: red;
+            
+        }
+        em{
+            float:right;
+            margin-top: 1px;
+            font-style: normal;
+            
+            font-weight: bolder;
+            
+
+        }
+        .我的京东:hover{
+            background: #fff;
+            border-top: 1px solid #cccccc;
+            border-left: 1px solid #cccccc;
+            border-right: 1px solid #cccccc;
+            position: absolute;
+            z-index: 2;
+            
+           
+        }
+        .我的京东:hover .下拉框{
+            display: block;
+            position: absolute;
+            z-index: 1;
+        }
+        .我的京东:hover .遮罩层{
+            border-top: 1px solid #cccccc;
+            
+        }
+      
+        li{
+            list-style: none;
+        }
+        .下拉框左{
+            float: left;
+            padding-left: 30px;
+            padding-top: 10px;
+            line-height: 30px;
+        }
+        .下拉框右{
+            float: right;
+            padding-right: 80px;
+            padding-top: 10px;
+            line-height: 30px;
+        }
+        .下拉框{
+            list-style: none;
+            width: 300px;
+            height: 190px;
+            font-size: 10px;
+            color: #888484;
+            background: #fff;
+            border: 1px solid #cccccc;
+            border-top: 1px solid transparent;
+            position: absolute;
+            left: -1px;
+            display: none;
+            z-index: 1;
+            
+
+            
+            
+        }
+        .下拉框:hover{
+            display: block;
+        }
+        .背景{
+            width: auto;
+            height: 300px;
+            background: url(图片/京东临时背景.png);
+        }
+        .遮罩层{
+            width: 223.5px;
+            height: 2px;
+            
+            margin-left: 77.5px;
+            border-top: 1px transparent;
+            
+            margin-top: -1px;
+
+        }
+        .遮罩层边框{
+            width: auto;
+            height: 10px;
+            
+            margin-top: 100px;
+            border-bottom: 1px solid #f1f1f1;
+        }
+        /* .遮罩层左 li:nth-child(n+1):nth-child(-n+2){
+            float: left;
+            padding-left: 30px;
+            padding-top: 10px;
+            line-height: 30px;
+        } */
+        .遮罩层左{
+            float: left;
+            padding-left: 30px;
+            padding-top: 10px;
+            line-height: 30px;
+
+        }
+        .遮罩层右{
+            float: right;
+            padding-right: 68px;
+            padding-top: 10px;
+            line-height: 30px;
+
+        }
+      
+     
+      
+
+      
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="页面">
+
+            <ul>
+
+                <li class="左无序">
+
+                    <i class="福建"></i>
+                    <span class="福建文字大小">福建</span>
+
+                </li>
+
+
+                <ul class="右无序">
+
+                    <li>你好，请登录 <span>免费注册</span>&nbsp;&nbsp;丨&nbsp;&nbsp;</li>
+                    <li>我的订单&nbsp;&nbsp;丨</li>
+                    <li class="我的京东">
+                        <a href="">我的京东&nbsp;</a><em>&#xe610;</em>
+
+                        <div class="下拉框">
+                            <ul class="下拉框左">
+                                <li>待处理订单</li>
+                                <li>返修退货货</li>
+                                <li>降价商品</li>
+                            </ul>
+                            <ul class="下拉框右">
+                                <li>消息</li>
+                                <li>我的问答</li>
+                                <li>我的关注</li>
+                            </ul>
+                            <div class="遮罩层"></div>
+                            <div class="遮罩层边框"></div>
+                            <ul class="遮罩层左">
+                                <li>我的京东</li>
+                                <li>我的白条</li>
+                                
+                            </ul>
+                            <ul class="遮罩层右">
+                                <li>我的优惠券</li>
+                                <li>我的理财</li>
+                            </ul>
+                        </div>
+
+                        
+                        
+                        
+                    </li>
+                    <li>丨&nbsp;&nbsp;京东会员&nbsp;&nbsp;丨&nbsp;&nbsp;</li>
+                    <li><span>企业采购</span> <i class="采购三角">&#xe610;</i>&nbsp;&nbsp;&nbsp;&nbsp;丨&nbsp;&nbsp;</li>
+                    <li>客户服务 <i>&#xe610;</i>&nbsp;&nbsp;&nbsp;&nbsp;丨&nbsp;&nbsp;</li>
+                    <li>网站导航 <i>&#xe610;</i>&nbsp;&nbsp;&nbsp;&nbsp;丨&nbsp;&nbsp;</li>
+                    <li>手机京东</li>
+                    
+                    
+
+                </ul>
+
+            
+                
+                
+
+
+            </ul>
+
+
+
+            <div class="背景">
+                
+
+            </div>
+            
+            
+
+           
+         
+
+           
+
+
+
+        </div>
+
+    </header>
+</body>
+
+</html>
